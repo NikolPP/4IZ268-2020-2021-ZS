@@ -6,10 +6,23 @@ function initMap() {
   });
 
   map.data.loadGeoJson('stores.json');
+  const storeList = $('<ul id=store-list">');
+  $.getJSON('https://eso.vse.cz/~posn01/SP2/map/stores.json').done((stores) => {
+    console.log(stores);
 
-  const apiKey = 'AIzaSyCtk9HDEtvG_FPhSt8dfVSE3IVEnQgF7HU';
+    const storesHtml = stores.features.map((feature) => {
+      return $(`<li class= "store">${feature.properties.name}<ul class = store-details><li class = store-phone>${feature.properties.phone}</li></ul></li>`).click(() => {
+        var lng = feature.geometry.coordinates[0];
+        var lat = feature.geometry.coordinates[1];
+        var latLng = new google.maps.LatLng(lat, lng);
+        map.panTo(latLng);
+        map.setZoom(15);
+      });
+    });
+    storeList.append(storesHtml);
+    $('#autocomplete').after(storeList);
+  });
   const infoWindow = new google.maps.InfoWindow();
-
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', (event) => {
     const name = event.feature.getProperty('name');
@@ -89,14 +102,13 @@ function initMap() {
     }
   });
   locationButton.addEventListener("click", () => {
-    // HTML5 geolocation.
 
   });
   function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
     infoWindow.setContent(
       browserHasGeolocation
-        ? "Error: Určení polohy selhalo."
+        ? "Error: Určení polohy selhalo. Prosím, aktualizujte stránku pro určení Vaší polohy-"
         : "Error: Váš prohlížeč nepodporuje geolokaci."
     );
     infoWindow.open(map);
@@ -104,13 +116,14 @@ function initMap() {
 
   $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
   $(window).on('load', function () {
-    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    setTimeout(removeLoader);
   });
   function removeLoader() {
-    $("#loadingDiv").fadeOut(500, function () {
-      // fadeOut complete. Remove the loading div
-      $("#loadingDiv").remove(); //makes page more lightweight 
+    $("#loadingDiv").fadeOut(function () {
+      $("#loadingDiv").remove();
     });
   }
 
 }
+
+
