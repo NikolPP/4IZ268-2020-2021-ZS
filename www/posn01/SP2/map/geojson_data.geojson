@@ -1,0 +1,100 @@
+[
+    {
+        "title": "bed breakfast 1",
+        "lat": 34.4085572,
+        "lng": -117.3984194,
+        "address":"8701 Highway 395 Hesperia, CA 92345",
+        "phone": "(555) 555-5551",
+        "description": "(I-15 & US 395)",
+        "storeNumber": "n/a",
+        "property": "new",
+        "unleaded": "$2,499",
+        "diesel": "$2,859",
+        "bioBlend": "B15",
+        "parking": "197",
+        "wifi": "Premium Wifi",
+        "storesHave": "showers rv-lanes trash-cans propane wifi continental-breakfast",
+        "restaurants": "wendys dennys mcdonalds subway arbys taco-bell"
+        
+    }, {
+        "title": "bed breakfast 2",
+        "lat": 34.4944759,
+        "lng": -118.6201487,
+        "address": "31642 Castaic Road Castaic, CA 91384",
+        "phone": "(661) 257-2800",
+        "description": "(I-5 & Lake Hughes Exit)",
+        "property": "under-construction",
+        "storesHave": "showers rv-lanes trash-cans propane wifi continental-breakfast",
+        "restaurants": "wendys dennys mcdonalds subway arbys taco-bell"
+    }, {
+        "title": "bed breakfast 3",
+        "lat": 33.9030289,
+        "lng": -116.5461993,
+        "address": "6605 N. Indian Canyon Drive PO Box 581236 North Palm Springs, CA 92258",
+        "phone": "(555) 555-5551",
+        "description": "(I-10 Garnet / Indian Ave)",
+        "property": "newly-remodeled",
+        "storesHave": "rv-lanes",
+        "restaurants": "mcdonalds"
+    }, {
+        "title": "small bed breakfast",
+        "lat": 33.8180527,
+        "lng": -116.4032862,
+        "address": "72235 Varner Rd Thousand Palms, CA 92276",
+        "phone": "(555) 555-5551",
+        "description": "(I-10 Bob Hope Exit)",
+        "property": "opening-soon",
+        "storesHave": "showers",
+        "restaurants": "taco-bell"
+    }, {
+        "title": "bed breakfast 4",
+        "lat": 32.5684051,
+        "lng": -116.9527522,
+        "address": "1497 Piper Ranch Road San Diego, CA 92154",
+        "phone": "(619) 661-9558",
+        "description": "(I-805 Exit 1B CA 905)",
+        "property": "",
+        "storesHave": "trash-cans propane wifi continental-breakfast",
+        "restaurants": "mcdonalds arbys"
+    }, {
+        "title": "bed breakfast 5",
+        "lat": 34.8546806,
+        "lng": -117.0873219,
+        "address": "2591 Commerce Parkway Barstow, CA 92311",
+        "phone": "(555) 555-5551",
+        "description": "(I-15/40/US 58 Lenwood Rd)",
+        "property": "",
+        "storesHave": "wifi",
+        "restaurants": "subway"
+    }, {
+        "title": "small bed breakfast 2",
+        "lat": 34.854494,
+        "lng": -117.0814646,
+        "address": "2611 Fisher Blvd. Barstow, CA 92311",
+        "phone": "(555) 555-5551",
+        "description": "(I-15 & Lenwood Exit)",
+        "property": "",
+        "storesHave": "propane wifi continental-breakfast",
+        "restaurants": "dennys taco-bell"
+    }, {
+        "title": "bed breakfast 6",
+        "lat": 34.9919593,
+        "lng": -117.5420292,
+        "address": "2611 Fisher Blvd. Barstow, CA 92311",
+        "phone": "(555) 555-5551",
+        "description": "(US 395/US 58)",
+        "property": "",
+        "storesHave": "propane wifi continental-breakfast",
+        "restaurants": "mcdonalds subway arbys"
+    }, {
+        "title": "small bed breakfast 3",
+        "lat": 34.8167237,
+        "lng": -118.8867612,
+        "address": "42810 Frazier Mountain Park Rd Frazier Park, CA 93243",
+        "phone": "(555) 555-5551",
+        "description": "(I-5 Frazier Park Exit 205)",
+        "property": "",
+        "storesHave": "showers rv-lanes",
+        "restaurants": "wendys taco-bell"
+    }
+]
